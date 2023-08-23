@@ -1,19 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   transition: all 0.5s;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-body{
+body {
   background-color: #000000;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,20 +21,20 @@ header{
   height: 10vh;
 }
 
-h2{
+h2 {
   color: LightSkyBlue;
 }
 
-.pai-container{
+.pai-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;  
+  width: 100%;
   height: 90vh;
 }
 
-.container{
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,46 +42,44 @@ h2{
   padding: 2rem;
   width: 45vw;
   background-color: #00001b;
-
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 25px;
-  
 }
 
-input{
+input {
   height: 0;
   outline: none;
   border: none;
   padding: 12px;
   background: transparent;
-  border-bottom: solid 4px #1a2d45;
+  border-bottom: solid 3px #1a2d45;
   color: #ffffff;
 }
 
-input:focus{
-  border-bottom: solid 4px LightSkyBlue;
+input:focus {
+  border-bottom: solid 3px LightSkyBlue;
   color: #fff;
 }
 
-textarea{
+textarea {
   padding: 10px;
   border: none;
   background: transparent;
-  border-bottom: solid 4px #1a2d45;
+  border-bottom: solid 3px #1a2d45;
   color: #fff;
 }
 
-textarea:focus{
-  border-bottom: solid 4px LightSkyBlue;
+textarea:focus {
+  border-bottom: solid 3px LightSkyBlue;
   color: #fff;
 }
 
-.pai-buttom{
+.pai-buttom {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,8 +87,7 @@ textarea:focus{
   width: 100%;
 }
 
-
-button{
+button {
   height: 6.5vh;
   outline: none;
   cursor: pointer;
@@ -101,22 +97,19 @@ button{
   font-size: 17px;
 }
 
-button:hover{
+button:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-
-::placeholder{
+::placeholder {
   color: #fff;
 }
 
-textarea:focus{
+textarea:focus {
   outline: 0;
 }
 
-h1{
+h1 {
   color: #ffffff;
   margin-bottom: 20px;
 }
-
-
