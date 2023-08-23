@@ -1,92 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   transition: all 0.5s;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-body{
+body {
+  background-color: #000000;
+}
+
+header {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  background-color: #00001b;
+  height: 10vh;
 }
 
-.container{
+h2 {
+  color: LightSkyBlue;
+}
+
+.pai-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 3rem;
-  width: 85vw;
-  background-color: #00008B;
-
+  width: 100%;
+  height: 90vh;
 }
 
-form{
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 45vw;
+  background-color: #00001b;
+}
+
+form {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 25px;
-  
 }
 
-input{
-  height: 4vh;
+input {
+  height: 0;
   outline: none;
-  border-radius: 5px;
-  padding: 1rem;
   border: none;
+  padding: 12px;
+  background: transparent;
+  border-bottom: solid 3px #1a2d45;
+  color: #ffffff;
 }
 
-textarea{
-  border-radius: 5px;
-  padding: 1rem;
-  border: none;
-}
-
-button{
-  height: 4vh;
-  outline: none;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-}
-
-button:hover{
-  background-color: #000000;
+input:focus {
+  border-bottom: solid 3px LightSkyBlue;
   color: #fff;
-  border: none;
 }
 
-input:focus{
-  background-color: #000000;
+textarea {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  border-bottom: solid 3px #1a2d45;
   color: #fff;
 }
 
 textarea:focus {
-   background-color: #000000;
+  border-bottom: solid 3px LightSkyBlue;
   color: #fff;
 }
 
-::placeholder{
-  color: #000;
+.pai-buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
 }
 
-textarea:focus{
+button {
+  height: 6.5vh;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: LightSkyBlue;
+  width: 110px;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+::placeholder {
+  color: #fff;
+}
+
+textarea:focus {
   outline: 0;
 }
 
-h1{
-  color: #83ff89;
+h1 {
+  color: #ffffff;
   margin-bottom: 20px;
-}
-
-button{
-  width: 100px;
 }

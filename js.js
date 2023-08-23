@@ -1,14 +1,23 @@
+const { isFlowDeclaration } = require("@babel/types");
 
-var email, senha, texto
+var email, senha, texto;
 
-
-function enviar(){
-   email = document.getElementById("EMAIL").value
- senha = document.getElementById("NOME").value
- texto = document.getElementById("TEXTO").value
-  if(email != "" && senha != "" && texto != ""){
-    alert('DEU CERTO')
-  }else{
-  alert('Email ou Senha estao vazios')
-}
+function enviar() {
+  email = document.getElementById("EMAIL").value;
+  nome = document.getElementById("NOME").value;
+  texto = document.getElementById("TEXTO").value;
+  if (email != "" && nome != "" && texto != "") {
+    alert("Deu certo");
+  } else {
+    alert("Existem campos vazios");
+  }
+  if (email === "") {
+    document.getElementById("EMAIL").style.borderBottom = "3px solid Crimson";
+  }
+  if (nome === "") {
+    document.getElementById("NOME").style.borderBottom = "3px solid Crimson";
+  }
+  if (texto === "") {
+    document.getElementById("TEXTO").style.borderBottom = "3px solid Crimson";
+  }
 }
