@@ -1,33 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
+  <body>
+    <header>
+      <h2>Front-End</h2>
+    </header>
+    <main>
+		 <div class="pai-container">
+        <h1>Formalário</h1>
+        <div class="container">
+          <form action="">
+            <input id="EMAIL" required autocomplete="off" placeholder="E-mail" type="text" />
+            <input id="NOME" required autocomplete="off"  placeholder="Nome" type="text" />
+            <textarea
+              id="TEXTO"
+              required autocomplete="off" 
+              placeholder="Texto"
+              name="texto"
+            ></textarea>
+          </form>
+        </div>
+     
+      <div class="pai-buttom">
+        <button onclick="enviar()">Enviar</button>
+      </div>
+	</div>
+    </main>
 
-<body>
-  <main>
-    <div class="container">
-      <h1>Tarefa Formalário
-      </h1>
-      <form action="">
-        <input id="EMAIL" placeholder="Email" type="text">
-        <input id="NOME" placeholder="Nome" type="text">
-        <textarea  placeholder="Texto" name="texto" id="TEXTO" cols="30" rows="10"></textarea>
-        <button onclick="enviar()">
-        Enviar
-      </button>
-      </form>
-      
-    </div>
-  </main>
-
-  <script src="js.js"></script>
-</body>
-
+    <script src="js.js"></script>
+  </body>
 </html>
