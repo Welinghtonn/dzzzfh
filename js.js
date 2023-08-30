@@ -1,6 +1,6 @@
 const { isFlowDeclaration } = require("@babel/types");
 
-var email, senha, texto;
+var email, nome, texto;
 
 function enviar() {
   email = document.getElementById("EMAIL").value;
