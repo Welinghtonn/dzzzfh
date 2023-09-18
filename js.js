@@ -1,4 +1,3 @@
-const { isFlowDeclaration } = require("@babel/types");
 
 var email, nome, texto;
 
